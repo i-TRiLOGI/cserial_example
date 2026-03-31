@@ -10,6 +10,7 @@ No additional libraries are required to run this program. Any standard Linux dis
 2. Compile `main.c` any way you want (e.g. by running `gcc main.c`)
 3. Execute the generated output file (e.g. `./a.out`)
 4. Start sending serial commands (enter `exit` to close the program).
+5. If you prefer to send hardcoded commands instead of entering them via the terminal, you can compile `main_nointeract.c` instead and change line 176 to your desired command. This version of the program will not loop and will exit after the first command and response.
 
 ## Notes
 * If you wish to send [Hostlink](https://docs.triplc.com/hostlink/) commands to a Triangle Research PLC like the WX100, you need to format your commands for the [multi-point](https://docs.triplc.com/um/wx100-users-manual/chapter-11-20/wx100-chapter-15/15-2/) protocol. Every command must begin with an `@` character.
